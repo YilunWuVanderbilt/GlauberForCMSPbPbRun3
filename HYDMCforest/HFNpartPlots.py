@@ -3,9 +3,6 @@ from ROOT import TColor
 from math import sqrt,log
 import numpy as np
 
-f1 = TFile('./ForSmearingHYDLHC_2024Response5036_d20240602_v1.root', "READ")
-f2 = TFile('./tables_Glauber2024A_ForHYDLHC5036Responsenbins200x_d20240602_Smearing975Eff.root', "READ")
-
 # plot utils
 from ROOT import gPad
 
@@ -58,6 +55,7 @@ def style_frame(frame):
     frame.GetXaxis().SetTitleOffset(1.0)
     frame.GetXaxis().SetNdivisions(505)
 
+f1 = TFile('./ForSmearingHYDLHC_2024Response5036_d20240602_v1.root', "READ")
 f1.cd();
 HF_vs_Npart = f1.Get("SmearingHist/HF_vs_Npart_0");
 
