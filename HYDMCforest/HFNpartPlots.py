@@ -1,10 +1,7 @@
-from ROOT import TFile,TH1F,TH2F,TCanvas,gPad,TLatex,TLegend,TPad,TLine,THStack,TGraph, TH1D
+from ROOT import TFile,TH1F,TH2F,TCanvas,gPad,TLatex,TLegend,TPad,TLine,THStack,TGraph, TH1D, gPad
 from ROOT import TColor
 from math import sqrt,log
 import numpy as np
-
-# plot utils
-from ROOT import gPad
 
 def DrawFrame(xmin, xmax, ymin, ymax, Title, setMargins):
 
