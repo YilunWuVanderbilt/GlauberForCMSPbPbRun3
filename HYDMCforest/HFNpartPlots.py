@@ -74,12 +74,6 @@ frame1.GetXaxis().SetTitleSize(35)
 HF_vs_Npart.SetStats(False);
 HF_vs_Npart.Draw("Same colz");
 
-line = TLine(0.,1,300,1);
-line.SetLineStyle(2);
-line.SetLineWidth(2);
-line.SetLineColor(1);
-line.Draw("same");
-
 Tl = TLatex()
 s1 = "Centrality 0-100%"
 s2 = "#it{Preliminary} "
